@@ -1,0 +1,13 @@
+.home {
+    .home__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 0;
+        gap: 30px;
+
+        .home__movies_list {
+            width: 100%;
+        }
+    }
+}

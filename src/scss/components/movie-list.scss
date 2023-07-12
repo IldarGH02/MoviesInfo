@@ -1,0 +1,15 @@
+// .movies__items {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     gap: 50px;
+//     background-color: #ffffff;
+//     border-radius: 20px;
+// }
+
+.movies__items {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 90%;
+    gap: 50px;
+    justify-content: center;   
+}

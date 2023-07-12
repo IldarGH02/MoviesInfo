@@ -1,0 +1,49 @@
+.header {
+    box-shadow: 0 0 15px 5px rgb(0, 0, 0, 0.3);
+
+    .header__content {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+
+        .header__logo {
+            svg {
+                circle {
+                    fill: $blueColor;
+                }
+                
+                path {
+                    fill: $titleColor;
+                }
+            }
+        }
+
+        .header__nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .header__link {
+                text-decoration: none;
+                transition: color .3s ease-in-out;
+                
+                @include _font(400, 20px, 27px, $darkColor);
+
+                &:not(:last-child) {
+                    margin-right: 60px;
+                }
+
+                &:hover {
+                    color: $hoverColor;
+                }
+            }
+
+            .active {
+                color: $hoverColor;
+                border-bottom: 1px solid $hoverColor;
+            }
+        }
+    }
+}

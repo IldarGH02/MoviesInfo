@@ -1,0 +1,25 @@
+.movie__image-plug {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 295px;
+    max-height: 295px;
+    width: 210px;
+    max-width: 100%;
+    margin-bottom: 15px;
+    background-color: #333333;
+    background-size: auto;
+    border-radius: 20px;
+    box-shadow: 0px 6px 12px 8px rgba(34, 60, 80, 0.19);
+
+    &:hover {        
+        box-shadow: 0px 6px 12px 8px rgba(2, 27, 252, 0.19);                
+        transform: scale(1.05);
+        transition: all .3s ease-in-out;        
+    }
+}
+
+.movie__image-plug::after {
+    content: "ЗАГЛУШКА";
+    @include _font(400, 25px, 30px, $whiteColor)
+}

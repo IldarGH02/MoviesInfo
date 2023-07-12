@@ -1,0 +1,15 @@
+@import './common/common.scss';
+@import './lib/lib.scss';
+@import './components/components.scss';
+@import './pages/pages.scss';
+@import './ui/ui.scss';
+
+body {
+    margin: 0;
+    font-family: 'Open-Sans', 'sans-serif', 'Verdana';
+    height: 100vh;
+    
+    #root {
+        height: 100%;
+    }    
+}
